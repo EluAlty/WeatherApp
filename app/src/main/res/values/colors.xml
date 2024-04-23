@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#373737</color>
+
+
+
+    <!-- Основная палитра -->
+    <color name="background_color">#FEF9EB</color>
+    <color name="on_background">#1D1C14</color>
+
+    <color name="primary">#646116</color>
+    <color name="primary_container">#EDE78E</color>
+    <color name="on_primary">#FFFFFFF</color>
+
+    <color name="secondary">#626042</color>
+
+    <color name="on_secondary">#FFFFFF</color>
+
+    <color name="tertiary">#3E6655</color>
+    <color name="tertiary_container">#C0ECD6</color>
+    <color name="on_tertiary">#FFFFFF</color>
+
+    <color name="hint_color">#A4B294</color>
+
+    <color name="secondary_container">#E6E2B9</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518424205223",
+    "project_id": "almatyweather",
+    "storage_bucket": "almatyweather.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518424205223:android:03f27b2525ddaf17d44882",
+        "android_client_info": {
+          "package_name": "com.example.weatherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518424205223-uo9t3mu34n9lra9eng7s0mvgk4up912s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqm0V_iDmhZHodJ-9Ub5pVZOBx67DZpqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518424205223-uo9t3mu34n9lra9eng7s0mvgk4up912s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

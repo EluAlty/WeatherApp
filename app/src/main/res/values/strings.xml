@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="appname">Almaty\nWeather</string>
+    <string name="login_text">Вход</string>
+    <string name="input_email_text">Почта</string>
+    <string name="input_password_text">Пароль</string>
+    <string name="confirm_password_text">Подтвердите пароль</string>
+    <string name="login_button_text">Войти</string>
+    <string name="create_account_text">Создать аккаунт</string>
+    <string name="register_title_text">Регистрация</string>
+    <string name="register_btn_text">Зарегистрироваться</string>
+    <string name="back_to_login">Войти в аккаунт</string>
+</resources>
