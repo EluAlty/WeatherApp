@@ -1,9 +1,9 @@
-package com.example.weatherapp.main;
+package com.example.weatherapp.main.ui;
 
 import java.util.Date;
 
 public class Weather {
-     private Date date;
+     private String date;
      private String condition;
      private int temperature;
 
@@ -11,17 +11,17 @@ public class Weather {
 
      }
 
-     public Weather(Date date, String condition, int temperature) {
+     public Weather(String date, String condition, int temperature) {
           this.date = date;
           this.condition = condition;
           this.temperature = temperature;
      }
 
-     public Date getDate() {
+     public String getDate() {
           return date;
      }
 
-     public void setDate(Date date) {
+     public void setDate(String date) {
           this.date = date;
      }
 

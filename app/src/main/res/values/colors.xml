@@ -10,10 +10,9 @@
 
     <color name="primary">#646116</color>
     <color name="primary_container">#EDE78E</color>
-    <color name="on_primary">#FFFFFFF</color>
+    <color name="on_primary">#FFFFFF</color>
 
     <color name="secondary">#626042</color>
-
     <color name="on_secondary">#FFFFFF</color>
 
     <color name="tertiary">#3E6655</color>

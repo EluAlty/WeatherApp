@@ -40,36 +40,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_logo_tv" />
 
-    <EditText
-        android:id="@+id/input_email_et"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/input_email_text"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:textColorHint="@color/hint_color"
-        android:padding="10dp"
-        android:inputType="textEmailAddress"
+        app:counterEnabled="true"
+        app:counterMaxLength="60"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/custom_input_bar"
-        app:layout_constraintTop_toBottomOf="@id/title_register_tv"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_register_tv"
+        app:startIconDrawable="@drawable/mail_fill0_wght400_grad0_opsz24">
 
-    <EditText
-        android:id="@+id/input_password_et"
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="-1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+            android:inputType="textEmailAddress"
+            android:maxLength="60" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/input_password_text"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:textColorHint="@color/hint_color"
-        android:padding="10dp"
-        android:inputType="textPassword"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/custom_input_bar"
-        app:layout_constraintTop_toBottomOf="@id/input_email_et"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+        app:passwordToggleContentDescription="true"
+        app:startIconDrawable="@drawable/lock_fill0_wght400_grad0_opsz24">
 
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password_Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login_btn"
@@ -81,7 +101,7 @@
         android:layout_marginHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_password_et" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
 
 
     <ImageButton

@@ -4,14 +4,25 @@ public class User {
      private String uid;
      private String email;
      private String key;
+     private String password;
 
      public User(){
 
      }
+
      public User(String uid, String email, String key) {
           this.uid = uid;
-          this.email = email;
           this.key = key;
+          this.email = email;
+     }
+
+
+     public String getPassword() {
+          return password;
+     }
+
+     public void setPassword(String password) {
+          this.password = password;
      }
 
      public String getUid() {
