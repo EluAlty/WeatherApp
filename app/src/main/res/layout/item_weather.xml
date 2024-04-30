@@ -45,6 +45,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/scada"
             android:text="cloudy"
+            android:gravity="center"
+            android:foregroundGravity="center"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"

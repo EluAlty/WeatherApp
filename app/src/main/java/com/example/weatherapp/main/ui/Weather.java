@@ -1,21 +1,22 @@
 package com.example.weatherapp.main.ui;
 
-import java.util.Date;
+import com.example.weatherapp.main.api.Condition;
 
 public class Weather {
      private String date;
-     private String condition;
-     private int temperature;
+     private double temperature;
+     private Condition condition;
+
+     public Weather(String date, int temperature, Condition condition) {
+          this.date = date;
+          this.temperature = temperature;
+          this.condition = condition;
+     }
 
      public Weather() {
 
      }
 
-     public Weather(String date, String condition, int temperature) {
-          this.date = date;
-          this.condition = condition;
-          this.temperature = temperature;
-     }
 
      public String getDate() {
           return date;
@@ -25,19 +26,19 @@ public class Weather {
           this.date = date;
      }
 
-     public String getCondition() {
-          return condition;
-     }
-
-     public void setCondition(String condition) {
-          this.condition = condition;
-     }
-
-     public int getTemperature() {
+     public double getTemperature() {
           return temperature;
      }
 
-     public void setTemperature(int temperature) {
+     public void setTemperature(double temperature) {
           this.temperature = temperature;
+     }
+
+     public Condition getCondition() {
+          return condition;
+     }
+
+     public void setCondition(Condition condition) {
+          this.condition = condition;
      }
 }

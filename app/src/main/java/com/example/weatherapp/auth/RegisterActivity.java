@@ -84,6 +84,9 @@ public class RegisterActivity extends AppCompatActivity {
                          || (passwd.charAt(i) >= 'a' && passwd.charAt(i) <= 'z')) {
                     hasLetters = true;
                     break;
+               } else{
+                    binding.passwordLayout.setErrorEnabled(true);
+                    binding.passwordLayout.setError(getString(R.string.error_weak_password_letters));
                }
           }
 

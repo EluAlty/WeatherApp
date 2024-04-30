@@ -32,16 +32,14 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
 
      @Override
      public void onBindViewHolder(@NonNull WeatherViewHolder holder, int position) {
-          Weather weather;
-          if (position == 0) {
-               weather = weatherList.get(0);
-          } else {
-               weather = weatherList.get(position);
-          }
+
+          Weather weather = weatherList.get(position);
 
           holder.dateTextView.setText(weather.getDate());
           holder.temperatureTextView.setText(String.valueOf(weather.getTemperature()));
-          holder.conditionTextView.setText(weather.getCondition());
+          holder.conditionTextView.setText(weather.getCondition().getText());
+
+
      }
 
      @Override
@@ -60,5 +58,12 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
                temperatureTextView = itemView.findViewById(R.id.week_temperature);
                conditionTextView = itemView.findViewById(R.id.week_condition);
           }
+     }
+
+
+     public void updateData(List<Weather> newWeatherList) {
+          this.weatherList.clear();
+          this.weatherList.addAll(newWeatherList);
+          notifyDataSetChanged();
      }
 }
